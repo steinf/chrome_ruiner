@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Definitely Google Docs",
+  "description": "Yeah, this is Google Docs. Look at documents and stuff.",
+  "version": "1.0",
+  "icons": {"128": "img/google_docs.png"},
+
+  "background": { "scripts": ["bg.js"] },
+
+  "chrome_url_overrides" : {
+    "newtab" : "replacement.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ]
+}
